@@ -43,6 +43,10 @@ const BannerTitle = styled.h1 `
     }
 
     @media (min-width: 1200px) {
+        padding-top: 50px;
+    }
+
+    @media (min-width: 1290px) {
         padding-top: 100px;
     }
 `
