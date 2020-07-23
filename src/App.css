@@ -30,13 +30,13 @@
   color: #F26301;
 }
 .why-subtitle {
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: normal;
 }
 
 .why-reasons {
   padding-top: 10px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 @media (min-width: 1280px){
@@ -44,6 +44,18 @@
     height: 80vh;
   }
 } 
+
+@media (min-width: 1290px){
+  .why-title {
+    font-size: 3rem
+  }
+  .why-subtitle {
+    font-size: 2rem;
+  }
+  .why-reasons {
+    font-size: 1.6rem;
+  }
+}
 
 /* .App {
   text-align: center;
