@@ -1,5 +1,5 @@
 import React from 'react' 
-import {Container, Grid, Button} from 'semantic-ui-react'
+import {Container, Grid, Button, Icon} from 'semantic-ui-react'
 import styled from 'styled-components'
 
 const Home = () =>{
@@ -22,6 +22,27 @@ const Home = () =>{
                     </Grid>
                 </Container>
             </div>
+            <div>
+            <Container className="why-container"> {/* the why */}
+                <Grid.Row>
+                    <Grid.Column>
+                        <h1 className="why-title">Why <span className="why-title-span">Van Halen Personal Training</span> Is The Right Choice</h1>
+                        <p className="why-subtitle">Over 15 years of helping clients reach and even exceed their own expectations</p>
+                        <Grid.Row>
+                            <Grid.Column style={{textAlign: "center"}}>
+                                <div className="why-reasons"><Icon name="check" color="red"/><span>Get off the starvation diet and eat reasonably</span></div> 
+                                <div className="why-reasons"><Icon name="check" color="red"/><span>Become more active and actually enjoy it</span></div> 
+                                <div className="why-reasons"><Icon name="check" color="red"/><span>No more counting caloires. Learn to eat more effectively</span></div> 
+                                <div className="why-reasons"><Icon name="check" color="red"/><span>No more feeling as though you have to work out seven days a week</span></div> 
+                                <div className="why-reasons"><Icon name="check" color="red"/><span>Get used to reaching goals</span></div> 
+                            </Grid.Column>
+                        </Grid.Row>
+                        
+
+                    </Grid.Column>
+                </Grid.Row>
+        </Container>
+        </div>
         </div>
     )
 }
