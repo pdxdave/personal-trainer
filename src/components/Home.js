@@ -1,5 +1,5 @@
 import React from 'react' 
-import {Container, Grid, Button, Icon} from 'semantic-ui-react'
+import {Container, Grid} from 'semantic-ui-react'
 import styled from 'styled-components'
 
 const Home = () =>{
