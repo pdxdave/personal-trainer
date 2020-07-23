@@ -6,10 +6,10 @@ const Home = () =>{
     return (
         <div>
             <div className="banner">
-                <Container>
+                <Container >
                     <Grid divided="vertically" style={{margin: "0", padding:"0"}}>
                         <Grid.Row>
-                            <Grid.Column mobile={10} table={10} computer={8}>
+                            <Grid.Column mobile={10} table={10} computer={8} >
                                 <BannerTitle>Personal Trainer</BannerTitle>
                                 <BannerSubTitle>Transform your life through personalized weight loss management and mind & body training</BannerSubTitle>
                                 <Button style={{marginBottom: "10px"}} color="orange">Click here</Button>
@@ -41,6 +41,7 @@ const BannerTitle = styled.h1 `
         margin: 0px;
         text-transform: uppercase;
     }
+
     @media (min-width: 1200px) {
         padding-top: 150px;
     }
