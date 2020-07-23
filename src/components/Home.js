@@ -37,13 +37,13 @@ const BannerTitle = styled.h1 `
     @media (min-width: 768px) {
         font-size: 5rem;
         font-weight: 700;
-        padding-top: 100px;
+        padding-top: 75px;
         margin: 0px;
         text-transform: uppercase;
     }
 
     @media (min-width: 1200px) {
-        padding-top: 150px;
+        padding-top: 100px;
     }
 `
 const BannerSubTitle = styled.p `
