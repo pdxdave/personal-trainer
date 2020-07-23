@@ -48,6 +48,7 @@ const BannerTitle = styled.h1 `
 `
 const BannerSubTitle = styled.p `
 
+    font-size: 1.2rem;
     @media (min-width: 768px) {
         padding-top: 16px;
         font-size: 2rem;
