@@ -82,7 +82,7 @@ const Home = () =>{
                 <Grid divided="vertically">
                     <Grid.Row>
                         <Grid.Column mobile={16} table={10} computer={12} className="manifesto-text">
-                        <h1>Van Halen Training Philosphy</h1>
+                        <h1>Van Halen Training Philosophy</h1>
                         <p>Clients come to me because they are in need of 
                         reconstruction. Reconstruction in the sense that their 
                         current foundation of diet, training, and mindfulness 
