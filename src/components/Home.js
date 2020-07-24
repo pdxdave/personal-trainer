@@ -1,5 +1,5 @@
 import React from 'react' 
-import {Container, Grid, Button, Icon} from 'semantic-ui-react'
+import {Container, Grid, Button, Icon, Embed} from 'semantic-ui-react'
 import styled from 'styled-components'
 
 const Home = () =>{
@@ -40,7 +40,7 @@ const Home = () =>{
                         </Grid.Row>
                     </Grid.Column>
 
-
+                <section style={{padding: "50px 0px 50px 0px"}}>
                 <Grid className="why-outline" stackable columns={2} >
                     <Grid.Column className="why-outline__column">
                         <Icon name="food" className="why-outline__icon"/>
@@ -65,10 +65,19 @@ const Home = () =>{
                         <p className="why-outline__text">Mental balance is just as important as physical balance. You will learn to live a more focused, and enjoyable life</p>
                     </Grid.Column>
                 </Grid>
+                </section>
             </Grid.Row>
         </Container> {/* end of the why container */}
-        </div>
-        </div>
+        </div> {/* end of the why wrapping div */}
+        <section className="video">
+            <h2>Develop new levels of strength</h2>
+                <div style={{height: "275px", maxWidth: "500px", margin: "0 auto"}}>
+                <Embed 
+                    id='ZJGTn2EhKwE'
+                    source='youtube'/>
+                </div>
+        </section>
+    </div>
     )
 }
 

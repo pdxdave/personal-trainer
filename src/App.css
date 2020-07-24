@@ -56,11 +56,18 @@ i.icon.why-outline__icon {
 .why-outline__title {
   border-bottom: 1px solid #626262;
   padding-bottom: 24px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #626262;
+  font-size: 1.4rem;
 }
 
 .why-outline__text {
   padding-top: 20px;
   font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #626262;
+  font-weight: 300;
 }
 
 p.why-outline__text {
@@ -70,6 +77,16 @@ p.why-outline__text {
   padding-top: 50px;
 }
 
+.ui.embed {
+  margin: 0 auto;
+}
+
+.video > h2 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #626262;
+  font-weight: 600;
+}
 
 @media (min-width: 1280px){
   .banner {
@@ -87,4 +104,8 @@ p.why-outline__text {
   .why-reasons {
     font-size: 1.6rem;
   }
+  .why-outline__text {
+    font-weight: 600;
+  }
+
 }
