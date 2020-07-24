@@ -20,8 +20,9 @@ const Home = () =>{
                             </Grid.Column>
                         </Grid.Row>
                     </Grid>
-                </Container>
+                </Container> {/* end of banner container */}
             </div>
+
             <div>
             <Container className="why-container"> {/* the why */}
                 <Grid.Row>
@@ -32,16 +33,40 @@ const Home = () =>{
                             <Grid.Column style={{textAlign: "center"}}>
                                 <div className="why-reasons"><Icon name="check" color="red"/><span>Get off the starvation diet and eat reasonably</span></div> 
                                 <div className="why-reasons"><Icon name="check" color="red"/><span>Become more active and actually enjoy it</span></div> 
-                                <div className="why-reasons"><Icon name="check" color="red"/><span>No more counting caloires. Learn to eat more effectively</span></div> 
+                                <div className="why-reasons"><Icon name="check" color="red"/><span>No more counting calories. Learn to eat more effectively</span></div> 
                                 <div className="why-reasons"><Icon name="check" color="red"/><span>No more feeling as though you have to work out seven days a week</span></div> 
                                 <div className="why-reasons"><Icon name="check" color="red"/><span>Get used to reaching goals</span></div> 
                             </Grid.Column>
                         </Grid.Row>
-                        
-
                     </Grid.Column>
-                </Grid.Row>
-        </Container>
+
+
+                <Grid className="why-outline" stackable columns={2} >
+                    <Grid.Column className="why-outline__column">
+                        <Icon name="food" className="why-outline__icon"/>
+                        <h3 className="why-outline__title">Nutrition</h3>
+                        <p className="why-outline__text">You will be introduced to a nutritional landscape and learn how to select the best foods for your goals</p>
+                    </Grid.Column>
+                    <Grid.Column className="why-outline__column">
+                        <Icon name="universal access" className="why-outline__icon"/>
+                        <h3 className="why-outline__title">Lifestyle</h3>
+                        <p className="why-outline__text">By creating a new lifestyle maintaining your health and well-being will be much simpler</p>
+                    </Grid.Column>
+                </Grid>
+                <Grid className="why-outline" stackable columns={2} >
+                    <Grid.Column className="why-outline__column">
+                        <Icon name="heart" className="why-outline__icon"/>
+                        <h3 className="why-outline__title">Exercise</h3>
+                        <p className="why-outline__text">We will develope an exercise program that fits into your new lifestyle</p>
+                    </Grid.Column>
+                    <Grid.Column className="why-outline__column">
+                        <Icon name="cogs" className="why-outline__icon"/>
+                        <h3 className="why-outline__title">Mind</h3>
+                        <p className="why-outline__text">Mental balance is just as important as physical balance. You will learn to live a more focused, and enjoyable life</p>
+                    </Grid.Column>
+                </Grid>
+            </Grid.Row>
+        </Container> {/* end of the why container */}
         </div>
         </div>
     )
