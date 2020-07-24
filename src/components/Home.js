@@ -1,6 +1,9 @@
 import React from 'react' 
-import {Container, Grid, Button, Icon, Embed} from 'semantic-ui-react'
+import {Container, Grid, Button, Icon, Embed, Image} from 'semantic-ui-react'
 import styled from 'styled-components'
+import woman from '../images/woman.jpg'
+import mind from '../images/mind.jpg'
+import food from '../images/food.jpg'
 
 const Home = () =>{
     return (
@@ -77,7 +80,7 @@ const Home = () =>{
                     source='youtube'/>
                 </div>
         </section>
-        <div className="manifesto">
+        <section className="manifesto">
             <Container className="manifesto-content">
                 <Grid divided="vertically">
                     <Grid.Row>
@@ -101,9 +104,46 @@ const Home = () =>{
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>
-                    
+            </Container>{/* end of manifesto-content*/}
+        </section>{/* end of manifesto */}
+        <section className="services">
+            <Container className="services-content">
+                <Grid>
+                    <Grid.Row>
+                        <Grid.Column className="services-header">
+                            <h1>Services</h1>
+                            <p>Van Halen Training provides a number of one-on-one training services.  Though our classes are small in size by choice, we do offer one-on-one options for clients who prefer this approach.</p>
+                        </Grid.Column>
+                    </Grid.Row>
+                </Grid>
+                <Grid stackable columns={3} className="services-stack">
+                    <Grid.Row>
+                        <Grid.Column>
+                            <Image src={woman} size="large"/>
+                            <p>With one-on-one weight training and stretching, clients can be held to a higher level of accountability. This is great for people who think they need that extra push to follow through.</p>
+                            <div className="services-btn">
+                                <Button color="red">Learn More</Button>
+                            </div>
+                        </Grid.Column>
+                        <Grid.Column>
+                            <Image src={food} size="large"/>
+                            <p>Learning how to shop for the correct ingredients and turn them into delicious dishes is an art.  We will take you through the entire process from shopping to cooking.</p>
+                            <div className="services-btn">
+                                <Button color="red">Learn More</Button>
+                            </div>
+                        </Grid.Column>
+                        <Grid.Column>
+                            <Image src={mind} size="large"/>
+                            <p>Believe it or not, relaxing can be stressful for some people. Reaching mindfulness through breathing is a skill.  We provide special guidance and tools for those who find it difficult.</p>
+                            <div className="services-btn">
+                                <Button color="red">Learn More</Button>
+                            </div>
+                        </Grid.Column>
+                    </Grid.Row>
+                </Grid>
+
             </Container>
-        </div>
+        </section>
     </div>// master div containing all content
     )
 }

@@ -92,7 +92,8 @@ p.why-outline__text {
 }
 
 .manifesto {
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/manifesto.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+  url('./images/manifesto.jpg');
   width: 100vw;
   height: 800px;
   background-size: cover;
@@ -121,6 +122,37 @@ p.why-outline__text {
 .manifesto-reasons {
   padding-bottom: 12px;
 }
+
+/*
+  services css settings
+*/
+
+.services-header {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.services-header > h1 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.services-header > p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.services-btn {
+  text-align: center;
+  padding-top: 20px
+}
+.ui.stackable.three.column.grid {
+  padding-top: 20px;
+}
+
+
+
+
 
 
 @media (min-width: 400px){
