@@ -57,7 +57,7 @@ const Home = () =>{
                     <Grid.Column className="why-outline__column">
                         <Icon name="heart" className="why-outline__icon"/>
                         <h3 className="why-outline__title">Exercise</h3>
-                        <p className="why-outline__text">We will develope an exercise program that fits into your new lifestyle</p>
+                        <p className="why-outline__text">We will develop an exercise program that fits into your new lifestyle</p>
                     </Grid.Column>
                     <Grid.Column className="why-outline__column">
                         <Icon name="cogs" className="why-outline__icon"/>
@@ -77,7 +77,34 @@ const Home = () =>{
                     source='youtube'/>
                 </div>
         </section>
-    </div>
+        <div className="manifesto">
+            <Container className="manifesto-content">
+                <Grid divided="vertically">
+                    <Grid.Row>
+                        <Grid.Column mobile={16} table={10} computer={12} className="manifesto-text">
+                        <h1>Van Halen Training Philosphy</h1>
+                        <p>Clients come to me because they are in need of 
+                        reconstruction. Reconstruction in the sense that their 
+                        current foundation of diet, training, and mindfulness 
+                        are either no longer working, or have never worked 
+                        to their optimum level. We break down the bad habits and 
+                        replace them with long lasting, beneficial habits. This is what they get in return...
+                        </p>
+                        <div className="manifesto-reasons"><Icon name="check" color="white"/><span>Feel good about yourself again</span></div> 
+                        <div className="manifesto-reasons"><Icon name="check" color="white"/><span>Maintain a healthy lifestyle without sacrificing the things you love</span></div> 
+                        <div className="manifesto-reasons"><Icon name="check" color="white"/><span>Wear the clothes you thought you could never fit in to</span></div> 
+                        <div className="manifesto-reasons"><Icon name="check" color="white"/><span>No longer feel embarassed at public gatherings because you think you're too big or out of shape</span></div> 
+                        <div className="manifesto-reasons"><Icon name="check" color="white"/><span>Enjoy eating healthy food without missing unhealthy food</span></div> 
+                        </Grid.Column>
+                        <Grid.Column > 
+                            {/* empty column */}
+                        </Grid.Column>
+                    </Grid.Row>
+                </Grid>
+                    
+            </Container>
+        </div>
+    </div>// master div containing all content
     )
 }
 
