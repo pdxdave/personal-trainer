@@ -126,7 +126,9 @@ p.why-outline__text {
 /*
   services css settings
 */
-
+.services {
+  padding-bottom: 60px;
+}
 .services-header {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
@@ -151,7 +153,30 @@ p.why-outline__text {
 }
 
 
+/*  footer */
+.ui.stackable.five.column.grid {
+  padding-top: 20px;
+  padding-bottom: 70px;
+  color: #f2f2f2;
+}
+.duh {
+  color: white;
+}
 
+footer {
+  background-color: #F26301;
+  color: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer-address > p {
+    padding: 2px 0 2px 0;
+    margin: 0
+}
+
+.footer-address {
+  text-align: right;
+}
 
 
 
@@ -160,7 +185,6 @@ p.why-outline__text {
     padding-bottom: 70px;
   }
 }
-
 
 @media (min-width: 1280px){
   .banner {
