@@ -18,6 +18,7 @@ class Navigate extends Component {
                     <Dropdown.Menu style={{borderTop: '1px solid white', 
                             borderRight: '1px solid white',
                             paddingTop: '7px'}}>
+                    <Dropdown.Item style={{fontSize: "12px"}} as={Link} to="/">Home</Dropdown.Item>
                     <Dropdown.Item style={{fontSize: "12px"}} as={Link} to="/about">About Us</Dropdown.Item>
                     <Dropdown.Item style={{fontSize: "12px"}} as={Link} to="/services">Services</Dropdown.Item>
                     <Dropdown.Item style={{fontSize: "12px"}} as={Link} to="/contact">Contact</Dropdown.Item>
