@@ -1,5 +1,5 @@
 import React from 'react' 
-import {Container, Grid, Button, Icon, Embed, Image} from 'semantic-ui-react'
+import {Container, Grid, Button, Icon, Embed, Image, List} from 'semantic-ui-react'
 import styled from 'styled-components'
 import woman from '../images/woman.jpg'
 import mind from '../images/mind.jpg'
@@ -15,8 +15,8 @@ const Home = () =>{
                             <Grid.Column mobile={10} table={10} computer={8} >
                                 <BannerTitle>Personal Trainer</BannerTitle>
                                 <BannerSubTitle>Transform your life through personalized weight loss management and mind & body training</BannerSubTitle>
-                                <Button style={{marginBottom: "10px"}} color="orange">Click here</Button>
-                                <Button color="blue">Click here</Button>
+                                <Button style={{marginBottom: "10px"}} color="orange">Get Started</Button>
+                                <Button color="blue">Contact</Button>
                             </Grid.Column>
                             <Grid.Column > 
                                  {/* empty column */}
@@ -143,7 +143,47 @@ const Home = () =>{
                 </Grid>
 
             </Container>
-        </section>
+        </section>{/* end of services */}
+        <footer>
+            <Container className="footer">
+                <Grid stackable columns={5} >
+                    <Grid.Row >
+                        <Grid.Column>
+                            <h3>Services</h3>
+                        <List link className="duh">
+                            <List.Item className="footer-link" as='a'>Home</List.Item>
+                            <List.Item className="footer-link" as='a'>About</List.Item>
+                            <List.Item className="footer-link" as='a'>Jobs</List.Item>
+                            <List.Item className="footer-link" as='a'>Team</List.Item>
+                        </List>
+                        </Grid.Column>
+                        <Grid.Column>
+                            <h3>Company</h3>
+                            <List link>
+                                <List.Item as='a'>About</List.Item>
+                                <List.Item as='a'>Privacy Policy</List.Item>
+                                <List.Item as='a'>Terms & Conditions</List.Item>
+                            </List>
+                        </Grid.Column>
+                        <Grid.Column>
+                            <h3>Support</h3>
+                            <List link>
+                                <List.Item as='a'>Contact</List.Item>
+                            </List>
+                        </Grid.Column>
+                        <Grid.Column>
+                        
+                        </Grid.Column >
+                            <Grid.Column  className="footer-address">
+                                <h3>Address</h3>
+                                <p>5715 SW 3rd</p>
+                                <p>Seattle, WA</p>
+                                <p>87551</p>
+                            </Grid.Column>
+                    </Grid.Row>
+                </Grid>
+            </Container>
+        </footer>
     </div>// master div containing all content
     )
 }
