@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import woman from '../images/woman.jpg'
 import mind from '../images/mind.jpg'
 import food from '../images/food.jpg'
+import car from '../images/car_roll.jpg'
 
 const Home = () =>{
     return (
@@ -74,10 +75,12 @@ const Home = () =>{
         </div> {/* end of the why wrapping div */}
         <section className="video">
             <h2>Develop new levels of strength</h2>
-                <div style={{height: "275px", maxWidth: "500px", margin: "0 auto"}}>
+                <div className="video-size">
                 <Embed 
                     id='ZJGTn2EhKwE'
-                    source='youtube'/>
+                    source='youtube'
+                    placeholder={car}
+                />
                 </div>
         </section>
         <section className="manifesto">
@@ -119,6 +122,7 @@ const Home = () =>{
                 <Grid stackable columns={3} className="services-stack">
                     <Grid.Row>
                         <Grid.Column>
+                            <h2 className="services-title">1:1 Weight Training</h2>
                             <Image src={woman} size="large"/>
                             <p>With one-on-one weight training and stretching, clients can be held to a higher level of accountability. This is great for people who think they need that extra push to follow through.</p>
                             <div className="services-btn">
@@ -126,6 +130,7 @@ const Home = () =>{
                             </div>
                         </Grid.Column>
                         <Grid.Column>
+                            <h2 className="services-title">1:1 Nutrition Training</h2>
                             <Image src={food} size="large"/>
                             <p>Learning how to shop for the correct ingredients and turn them into delicious dishes is an art.  We will take you through the entire process from shopping to cooking.</p>
                             <div className="services-btn">
@@ -133,6 +138,7 @@ const Home = () =>{
                             </div>
                         </Grid.Column>
                         <Grid.Column>
+                            <h2 className="services-title">1:1 Mindfulness Training</h2>
                             <Image src={mind} size="large"/>
                             <p>Believe it or not, relaxing can be stressful for some people. Reaching mindfulness through breathing is a skill.  We provide special guidance and tools for those who find it difficult.</p>
                             <div className="services-btn">
@@ -150,16 +156,16 @@ const Home = () =>{
                     <Grid.Row >
                         <Grid.Column>
                             <h3>Services</h3>
-                        <List link className="duh">
-                            <List.Item className="footer-link" as='a'>Home</List.Item>
-                            <List.Item className="footer-link" as='a'>About</List.Item>
-                            <List.Item className="footer-link" as='a'>Jobs</List.Item>
-                            <List.Item className="footer-link" as='a'>Team</List.Item>
+                        <List Link className="test">
+                            <List.Item as='a'>Home</List.Item>
+                            <List.Item as='a'>About</List.Item>
+                            <List.Item as='a'>Jobs</List.Item>
+                            <List.Item as='a'>Team</List.Item>
                         </List>
                         </Grid.Column>
                         <Grid.Column>
                             <h3>Company</h3>
-                            <List link>
+                            <List link className="test">
                                 <List.Item as='a'>About</List.Item>
                                 <List.Item as='a'>Privacy Policy</List.Item>
                                 <List.Item as='a'>Terms & Conditions</List.Item>
@@ -167,7 +173,7 @@ const Home = () =>{
                         </Grid.Column>
                         <Grid.Column>
                             <h3>Support</h3>
-                            <List link>
+                            <List link className="test">
                                 <List.Item as='a'>Contact</List.Item>
                             </List>
                         </Grid.Column>
